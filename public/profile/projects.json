@@ -1,0 +1,51 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/ListadoOrdenes.gif",
+            "title": "InstaYA App 📦",
+            "bodyText": "- Gestión de paquetes\n -  Uso de inicio de sesión para clientes.\n - Uso de registro para clientes.\n - Uso de validaciones\n - Uso del CRUD.",
+            "links": [
+                {
+                    "text": "GitHub |Frontend|",
+                    "href": "https://github.com/Manuelortegaj11/Frontend_misiontic"
+                },
+                {
+                    "text": "GitHub |Backend|",
+                    "href": "https://github.com/Manuelortegaj11/Backend_misiontic"
+                }
+                
+            ],
+            "tags" : [
+                "VScode",
+                "JavaScript",
+                "ReactJs",
+                "NodeJs",
+                "Express",
+                "MongoDB",
+                "DigitalOcean"
+            ]
+        },
+       
+        {
+            "image" : "images/projects/veterinaria_.gif",
+            "title": "Veterinaria, Agendar citas 🩹",
+            "bodyText": "- web para clinica veterinaria un formulario que permite agendar cita para mascotas, con admin inicio de secion y base de datos.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Manuelortegaj11/Datos_Seguro"
+                }
+            ],
+            "tags" : [
+                "HTML",
+                "CSS",
+                "Flask",
+                "SQL",
+                "Python"
+            ]
+        }
+        
+    ]   
+}
+
+        

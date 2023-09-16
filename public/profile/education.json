@@ -1,0 +1,31 @@
+{
+    "education":[
+        {
+            "title": "Terminando en marzo de 2024",
+            "cardTitle": "Título: Ingeniero de sistemas",
+            "cardSubtitle":"Corporación Unificada Nacional de Educación Superior - CUN",
+            "cardDetailedText": "En proceso",
+            "icon" : {
+                "src": "images/education/logo.png"
+            }
+        },
+        {
+        "title": "Tecnologo, 2023",
+        "cardTitle": "Titulo: Tecnologo en Análisis y Desarrollo de sistemas de informacion",
+        "cardSubtitle":"SENA",
+        "cardDetailedText": "Completado"
+        },
+        {
+        "title": "Virtual, 2023",
+        "cardTitle": "Python sin fronteras - 48 horas",
+        "cardSubtitle":"Udemy",
+        "cardDetailedText": "Completado"
+        },
+        {
+            "title": "Virtual, 2022",
+            "cardTitle": "Título: Desarrollador Web - Diplomado en habilidades de programación con énfasis en aplicaciones web Misión tic 2022, con una intensidad horaria de 800 horas",
+            "cardSubtitle":"Universidad del Norte, Barranquilla",
+            "cardDetailedText": "Completado"
+        }
+          ]
+}

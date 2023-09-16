@@ -1,0 +1,66 @@
+{
+    "experiences": [
+        {
+            "title": "Practicante, Analista de datos",
+            "subtitle": "He desempeñado este cargo en le desarrollo de practicas profesionales.",
+            "workType": "Claro colombia",
+            "workDescription": [
+                "Extracción de requisitos",
+                "Uso y aprendizaje de herramientas del paquete office.",
+                "Presentacion y envio de informes usando herramientas como Exel y Power BI",
+                "Ejecutar Bases de datos diariamente para generar informes con la informacion de ventas diarias",
+                "Desacargar Datos de SAP diariamente",
+                "Uso del modelo logico de datos.",
+                "Uso de reglas de normalización.",
+                "Creación de una base de datos donde se manejan entre 15 millones de registros en diferentes tablas de la base de base de datos.",
+                "Uso de script con la creación de vistas y  procedimientos almacenados.",
+                "Documentar el historial del proceso.",
+                "Uso de herramienta de data integration, como Spoon Pentaho: es un ETL para la extraccion, transformacion y carga de datos."
+            ],
+            "dateText": "02/2023-08/2023 – Completado"
+        },
+
+        {
+            "title": "Base de datos",
+            "subtitle": "He participado como DBA para en el diseño y administración de bases de datos",
+            "workType": "Independiente",
+            "workDescription": [
+                "Extracción de requisitos",
+                "Uso del modelo entidad-relación.",
+                "Uso del modelo logico de datos.",
+                "Uso de reglas de normalización.",
+                "Creación de scripts para crear la base de datos.",
+                "Uso de script con la creación de vistas y  procedimientos almacenados.",
+                "Documentar el historial del proceso."
+            ],
+            "dateText": "06/2021 – Presente"
+        },
+
+        {
+            "title": "Desarrollo web",
+            "subtitle": "He participado en proyectos como Full Stack donde he aprendido a realizar apps aplicando operaciones esenciales.",
+            "workType": "Remoto y en el sitio (Trabajo grupal / Independiente)",
+            "workDescription": [
+                "Habilidad en metodología ágil (Scrum)",
+                "Uso de ReactJs.",
+                "Uso de NodeJs, Express.",
+                "Uso de Postman",
+                "Uso de MongoDB Atlas y MongoDB Compass.",
+                "Control de versiones usando Git y Github"
+            ],
+            "dateText": "1/2022 – 12/2022"
+        }
+            
+       
+    ]
+}
+
+
+
+
+
+
+
+
+
+
