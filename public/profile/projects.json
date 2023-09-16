@@ -33,7 +33,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/Manuelortegaj11/Datos_Seguro"
+                    "href": "https://github.com/LuisDaga07/Ejercicio_Clinica_Veterinaria"
                 }
             ],
             "tags" : [
@@ -42,6 +42,25 @@
                 "Flask",
                 "SQL",
                 "Python"
+            ]
+        },
+        {
+            "image" : "images/projects/portafolio.gif",
+            "title": "Portafolio 🩹",
+            "bodyText": "- web construida con Python y Flask, es un portafolio con seccion de contactos, proyectos, presentacion y descripcion de datos personales.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/Portafolio_Python"
+                }
+            ],
+            "tags" : [
+                "HTML",
+                "CSS",
+                "Flask",
+                "SQL",
+                "Python",
+                "Sendgrid"
             ]
         }
         
