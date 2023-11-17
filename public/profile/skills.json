@@ -40,6 +40,10 @@
                 {
                     "icon": "images/skills/flask.png",
                     "title": "Flask"
+                },
+                {
+                    "icon": "images/skills/django.png",
+                    "title": "Django"
                 }
             ]
         },

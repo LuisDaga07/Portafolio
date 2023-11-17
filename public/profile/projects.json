@@ -46,7 +46,7 @@
         },
         {
             "image" : "images/projects/portafolio.gif",
-            "title": "Portafolio 🩹",
+            "title": "Portafolio-Python🩹",
             "bodyText": "- web construida con Python y Flask, es un portafolio con seccion de contactos, proyectos, presentacion y descripcion de datos personales.",
             "links": [
                 {
@@ -61,6 +61,25 @@
                 "SQL",
                 "Python",
                 "Sendgrid"
+            ]
+        },
+        {
+            "image" : "images/projects/agenda.gif",
+            "title": "Contac and To Do - Django -Python🩹",
+            "bodyText": "Sumérgete en nuestro último proyecto web, desarrollado en Python con el poderoso framework Django. En esta demostración visual en formato GIF, podrás explorar dos características destacadas: la aplicación 'Todo', que transforma la gestión de tareas en una experiencia fluida y eficiente, y la sección de 'Contacto', que simplifica la conexión con nosotros. Descubre la combinación perfecta de elegancia y funcionalidad en cada rincón de esta web diseñada para hacer tu vida más fácil.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/Agenda---Django"
+                }
+            ],
+            "tags" : [
+                "HTML",
+                "CSS",
+                "Django",
+                "PostgresSQL",
+                "Python"
+                
             ]
         }
         
