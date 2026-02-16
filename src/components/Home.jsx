@@ -8,7 +8,7 @@ import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
 const MainContainer = styled.div`
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 96px);
   display: flex;
   flex-direction: column;
   justify-content: center;

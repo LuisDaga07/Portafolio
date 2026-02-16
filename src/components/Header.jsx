@@ -4,6 +4,7 @@ import styled, { ThemeContext } from 'styled-components';
 
 const HeaderContainer = styled.div`
   text-align: center;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
   max-width: 640px;
   margin-left: auto;

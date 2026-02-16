@@ -6,13 +6,13 @@
 
 .MainApp {
   flex: 1;
-  padding-top: 72px;
+  padding-top: 96px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 96px);
 }
 
 .section-content-container {
@@ -50,11 +50,11 @@ html {
 
 @media (max-width: 768px) {
   .MainApp {
-    padding-top: 64px;
+    padding-top: 88px;
   }
-  
+
   .main {
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 88px);
   }
   
   .section-content-container {
