@@ -1,31 +1,25 @@
 {
-    "education":[
-        {
-            "title": "Terminando en marzo de 2024",
-            "cardTitle": "Título: Ingeniero de sistemas",
-            "cardSubtitle":"Corporación Unificada Nacional de Educación Superior - CUN",
-            "cardDetailedText": "En proceso",
-            "icon" : {
-                "src": "images/education/logo.png"
-            }
-        },
-        {
-        "title": "Tecnologo, 2023",
-        "cardTitle": "Titulo: Tecnologo en Análisis y Desarrollo de sistemas de informacion",
-        "cardSubtitle":"SENA",
-        "cardDetailedText": "Completado"
-        },
-        {
-        "title": "Virtual, 2023",
-        "cardTitle": "Python sin fronteras - 48 horas",
-        "cardSubtitle":"Udemy",
-        "cardDetailedText": "Completado"
-        },
-        {
-            "title": "Virtual, 2022",
-            "cardTitle": "Título: Desarrollador Web - Diplomado en habilidades de programación con énfasis en aplicaciones web Misión tic 2022, con una intensidad horaria de 800 horas",
-            "cardSubtitle":"Universidad del Norte, Barranquilla",
-            "cardDetailedText": "Completado"
-        }
-          ]
+  "education": [
+    {
+      "title": "2025",
+      "cardTitle": "Ingeniería de Sistemas",
+      "cardSubtitle": "Corporación Unificada de Educación Superior",
+      "cardDetailedText": "Bogotá, Colombia. En curso.",
+      "icon": { "src": "images/education/logo.png", "alt": "CUN" }
+    },
+    {
+      "title": "2023",
+      "cardTitle": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+      "cardSubtitle": "SENA",
+      "cardDetailedText": "Bogotá, Colombia. Completado.",
+      "icon": { "src": "images/education/logo.png", "alt": "SENA" }
+    },
+    {
+      "title": "2022",
+      "cardTitle": "Diplomado en Desarrollo de Software",
+      "cardSubtitle": "Universidad del Norte",
+      "cardDetailedText": "Bogotá, Colombia. Completado.",
+      "icon": { "src": "images/education/logo.png", "alt": "Uninorte" }
+    }
+  ]
 }

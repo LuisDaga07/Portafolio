@@ -11,19 +11,17 @@ function ThemeToggler(props) {
   };
 
   return (
-    <>
-      <AppContext.Consumer>
-        {(values) => (
-          <div style={{ marginBottom: 8 }}>
-            <DarkModeToggle
-              onChange={() => handleOnChange(values.darkMode)}
-              checked={values.darkMode.value}
-              size={70}
-            />
-          </div>
-        )}
-      </AppContext.Consumer>
-    </>
+    <AppContext.Consumer>
+      {(values) => (
+        <div style={{ marginLeft: '0.5rem' }}>
+          <DarkModeToggle
+            onChange={() => handleOnChange(values.darkMode)}
+            checked={values.darkMode.value}
+            size={56}
+          />
+        </div>
+      )}
+    </AppContext.Consumer>
   );
 }
 

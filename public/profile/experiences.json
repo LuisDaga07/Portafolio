@@ -1,66 +1,58 @@
 {
-    "experiences": [
-        {
-            "title": "Practicante, Analista de datos",
-            "subtitle": "He desempeñado este cargo en le desarrollo de practicas profesionales.",
-            "workType": "Claro colombia",
-            "workDescription": [
-                "Extracción de requisitos",
-                "Uso y aprendizaje de herramientas del paquete office.",
-                "Presentacion y envio de informes usando herramientas como Exel y Power BI",
-                "Ejecutar Bases de datos diariamente para generar informes con la informacion de ventas diarias",
-                "Desacargar Datos de SAP diariamente",
-                "Uso del modelo logico de datos.",
-                "Uso de reglas de normalización.",
-                "Creación de una base de datos donde se manejan entre 15 millones de registros en diferentes tablas de la base de base de datos.",
-                "Uso de script con la creación de vistas y  procedimientos almacenados.",
-                "Documentar el historial del proceso.",
-                "Uso de herramienta de data integration, como Spoon Pentaho: es un ETL para la extraccion, transformacion y carga de datos."
-            ],
-            "dateText": "02/2023-08/2023 – Completado"
-        },
-
-        {
-            "title": "Base de datos",
-            "subtitle": "He participado como DBA para en el diseño y administración de bases de datos",
-            "workType": "Independiente",
-            "workDescription": [
-                "Extracción de requisitos",
-                "Uso del modelo entidad-relación.",
-                "Uso del modelo logico de datos.",
-                "Uso de reglas de normalización.",
-                "Creación de scripts para crear la base de datos.",
-                "Uso de script con la creación de vistas y  procedimientos almacenados.",
-                "Documentar el historial del proceso."
-            ],
-            "dateText": "06/2021 – Presente"
-        },
-
-        {
-            "title": "Desarrollo web",
-            "subtitle": "He participado en proyectos como Full Stack donde he aprendido a realizar apps aplicando operaciones esenciales.",
-            "workType": "Remoto y en el sitio (Trabajo grupal / Independiente)",
-            "workDescription": [
-                "Habilidad en metodología ágil (Scrum)",
-                "Uso de ReactJs.",
-                "Uso de NodeJs, Express.",
-                "Uso de Postman",
-                "Uso de MongoDB Atlas y MongoDB Compass.",
-                "Control de versiones usando Git y Github"
-            ],
-            "dateText": "1/2022 – 12/2022"
-        }
-            
-       
-    ]
+  "experiences": [
+    {
+      "title": "Analista de Datos",
+      "subtitle": "Datalaft, Bogotá",
+      "workType": "Tiempo completo",
+      "dateText": "Mar 2025 - Actualidad",
+      "workDescription": [
+        "Desarrollo de pipelines ETL para extracción, transformación y carga de datos desde múltiples fuentes (Web Scraping, APIs y archivos estructurados)",
+        "Automatización de procesos de monitoreo y generación de alertas basadas en reglas y patrones de datos críticos",
+        "Construcción de herramientas de análisis con Python, SQL y Excel avanzado para optimización de decisiones operativas y estratégicas",
+        "Diseño de dashboards y reportes interactivos en Power BI y plataformas internas",
+        "Colaboración con equipos multidisciplinarios para integrar criterios técnicos en modelos de análisis",
+        "Implementación de procesos de limpieza, validación y aseguramiento de calidad de datos",
+        "Documentación técnica de flujos de datos, scripts y procesos automatizados"
+      ]
+    },
+    {
+      "title": "Auxiliar TI",
+      "subtitle": "Diana Corporación S.A.S., Bogotá",
+      "workType": "Tiempo completo",
+      "dateText": "Abr 2024 - Dic 2024",
+      "workDescription": [
+        "Gestión de datos en SAP: extracción, transformación y carga (ETL) de información",
+        "Creación y optimización de consultas SQL para análisis y generación de reportes",
+        "Desarrollo de informes y dashboards interactivos en Power BI para toma de decisiones",
+        "Elaboración de modelos de datos avanzados en Excel integrando múltiples fuentes",
+        "Soporte técnico a usuarios en SAP, SQL, Excel y Power BI",
+        "Capacitación y asesoramiento en uso de herramientas tecnológicas",
+        "Identificación e implementación de mejoras en procesos con herramientas de análisis de datos"
+      ]
+    },
+    {
+      "title": "Practicante - Analista de Datos",
+      "subtitle": "Claro Colombia, Bogotá",
+      "workType": "Prácticas profesionales",
+      "dateText": "Feb 2023 - Ago 2023",
+      "workDescription": [
+        "Análisis de datos y generación de informes en Power BI, SAP, Excel, Office 365, Python y SQL",
+        "Desarrollo de tableros en Power BI e integración con SharePoint",
+        "Desarrollo de base de datos desde Access a MySQL usando herramientas de ingeniería de datos",
+        "Organización y presentación de eventos VIP"
+      ]
+    },
+    {
+      "title": "Desarrollo web y Bases de datos",
+      "subtitle": "Independiente",
+      "workType": "Freelance",
+      "dateText": "Ene 2022 - Dic 2023",
+      "workDescription": [
+        "Desarrollo Full Stack con stack MERN (MongoDB, Express, React, Node.js)",
+        "Diseño y administración de bases de datos relacionales con SQL y MySQL",
+        "Proyectos aplicando metodologías ágiles (Scrum)",
+        "Uso de Git/GitHub para control de versiones"
+      ]
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-

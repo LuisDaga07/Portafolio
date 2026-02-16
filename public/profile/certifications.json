@@ -1,6 +1,34 @@
 {
     "certifications" : [
         {
+            "image" : "images/certification/diploma_Python.jpg",
+            "title": "FUNDAMENTOS DE INGENIERÍA DE SOFTWARE",
+            "bodyText": "Curso en Platzi sobre fundamentos de ingeniería de software, buenas prácticas y metodologías de desarrollo. Jun 2025.",
+            "links": [],
+            "tags": ["Platzi", "Ingeniería de Software"]
+        },
+        {
+            "image" : "images/certification/diploma_Python.jpg",
+            "title": "FUNDAMENTOS DE ARQUITECTURA DE SOFTWARE",
+            "bodyText": "Curso en Platzi sobre arquitectura de software, patrones de diseño y escalabilidad. Jun 2025.",
+            "links": [],
+            "tags": ["Platzi", "Arquitectura"]
+        },
+        {
+            "image" : "images/certification/diploma_Python.jpg",
+            "title": "INTRODUCCIÓN A BASES DE DATOS",
+            "bodyText": "Curso de Meta sobre fundamentos de bases de datos, diseño relacional y consultas SQL.",
+            "links": [],
+            "tags": ["Meta", "SQL", "Bases de datos"]
+        },
+        {
+            "image" : "images/certification/diploma_Python.jpg",
+            "title": "DATA SCIENCE",
+            "bodyText": "Curso de Generación TIC en ciencia de datos, análisis y visualización.",
+            "links": [],
+            "tags": ["Generación TIC", "Data Science", "Python"]
+        },
+        {
             "image" : "images/certification/certificado_5.jpg",
             "title": "DESARROLLADOR WEB",
             "bodyText": "- Ha culminado y aprobado con éxito el programa de CONOCIMIENTOS ACADÉMICOS EN HABILIDADES EN PROGRAMACIÓN CON ÉNFASIS EN APLICACIONES WEB, con una intensidad horaria de 800 horas (320 horas de sesiones sincrónicas y 480 horas de trabajo autónomo), desarrollado en el marco del proyecto Misión TIC 2022.",

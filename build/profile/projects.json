@@ -1,0 +1,113 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/portafolio.gif",
+            "title": "Sistemas POS",
+            "bodyText": "Sistema de Punto de Venta (POS) para gestión de inventario, ventas y reportes. Desarrollo full stack con integración de base de datos para control de productos, clientes y transacciones.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/sistemas-pos"
+                }
+            ],
+            "tags" : ["web", "Python", "SQL", "Full Stack", "Flask"],
+            "type": "Full Stack",
+            "date": "2024"
+        },
+        {
+            "image" : "images/projects/ListadoOrdenes.gif",
+            "title": "InstaYA App 📦",
+            "bodyText": "- Gestión de paquetes\n -  Uso de inicio de sesión para clientes.\n - Uso de registro para clientes.\n - Uso de validaciones\n - Uso del CRUD.",
+            "links": [
+                {
+                    "text": "GitHub |Frontend|",
+                    "href": "https://github.com/Manuelortegaj11/Frontend_misiontic"
+                },
+                {
+                    "text": "GitHub |Backend|",
+                    "href": "https://github.com/Manuelortegaj11/Backend_misiontic"
+                }
+                
+            ],
+            "tags" : [
+                "web",
+                "Full Stack",
+                "HTML",
+                "CSS",
+                "VScode",
+                "JavaScript",
+                "ReactJs",
+                "NodeJs",
+                "Express",
+                "MongoDB",
+                "DigitalOcean"
+            ]
+        },
+       
+        {
+            "image" : "images/projects/veterinaria_.gif",
+            "title": "Veterinaria, Agendar citas 🩹",
+            "bodyText": "- Transforma tu experiencia en la clínica veterinaria con nuestra nueva aplicación web de agendamiento de citas. Diseñada específicamente para tu comodidad, nuestro formulario intuitivo te permite reservar fácilmente citas para tus mascotas. Además, ofrecemos una funcionalidad de administrador con inicio de sesión seguro para gestionar eficientemente las citas. Respaldada por una sólida base de datos, nuestra plataforma garantiza un manejo eficaz y seguro de la información. Simplifica la atención a tus mascotas con nuestra herramienta de agendamiento, brindándoles el cuidado que se merecen. 🐾",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/Ejercicio_Clinica_Veterinaria"
+                }
+            ],
+            "tags" : [
+                "web",
+                "Full Stack",
+                "HTML",
+                "CSS",
+                "Flask",
+                "SQL",
+                "Python"
+            ]
+        },
+        {
+            "image" : "images/projects/portafolio.gif",
+            "title": "Portafolio-Python🩹",
+            "bodyText": "- Explora mi portafolio Python 🩹, una web desarrollada con Python y Flask. Este portafolio incluye secciones detalladas sobre mis proyectos, información personal y una forma sencilla de contactarme. Descubre una presentación completa y datos personales detallados para obtener una visión completa de mi experiencia y habilidades.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/Portafolio_Python"
+                }
+            ],
+            "tags" : [
+                "web",
+                "Full Stack",
+                "HTML",
+                "CSS",
+                "Flask",
+                "SQL",
+                "Python",
+                "Sendgrid"
+            ]
+        },
+        {
+            "image" : "images/projects/agenda.gif",
+            "title": "Contac and To Do - Django -Python🩹",
+            "bodyText": "Sumérgete en nuestro último proyecto web, desarrollado en Python con el poderoso framework Django. En esta demostración visual en formato GIF, podrás explorar dos características destacadas: la aplicación 'Todo', que transforma la gestión de tareas en una experiencia fluida y eficiente, y la sección de 'Contacto', que simplifica la conexión con nosotros. Descubre la combinación perfecta de elegancia y funcionalidad en cada rincón de esta web diseñada para hacer tu vida más fácil.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/LuisDaga07/Agenda---Django"
+                }
+            ],
+            "tags" : [
+                "web",
+                "Full Stack",
+                "HTML",
+                "CSS",
+                "Django",
+                "PostgresSQL",
+                "Python"
+                
+            ]
+        }
+        
+    ]   
+}
+
+        

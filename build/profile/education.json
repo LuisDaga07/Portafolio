@@ -1,0 +1,25 @@
+{
+  "education": [
+    {
+      "title": "2025",
+      "cardTitle": "Ingeniería de Sistemas",
+      "cardSubtitle": "Corporación Unificada de Educación Superior",
+      "cardDetailedText": "Bogotá, Colombia. En curso.",
+      "icon": { "src": "images/education/logo.png", "alt": "CUN" }
+    },
+    {
+      "title": "2023",
+      "cardTitle": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+      "cardSubtitle": "SENA",
+      "cardDetailedText": "Bogotá, Colombia. Completado.",
+      "icon": { "src": "images/education/logo.png", "alt": "SENA" }
+    },
+    {
+      "title": "2022",
+      "cardTitle": "Diplomado en Desarrollo de Software",
+      "cardSubtitle": "Universidad del Norte",
+      "cardDetailedText": "Bogotá, Colombia. Completado.",
+      "icon": { "src": "images/education/logo.png", "alt": "Uninorte" }
+    }
+  ]
+}

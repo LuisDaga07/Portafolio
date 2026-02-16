@@ -1,14 +1,35 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { ThemeContext } from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 
-const styles = {
-  iconStyle: {
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
-  },
+const SocialContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+`;
+
+const IconWrapper = styled.div`
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+`;
+
+const getNetworkName = (network) => {
+  const names = {
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
+    twitter: 'Twitter',
+    instagram: 'Instagram',
+    facebook: 'Facebook',
+    youtube: 'YouTube',
+    email: 'Email',
+  };
+  return names[network] || network;
 };
 
 function Social() {
@@ -25,19 +46,21 @@ function Social() {
   }, []);
 
   return (
-    <div className="social">
-      {data ? data.social.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          network={social.network}
-          bgColor={theme.socialIconBgColor}
-          target="_blank"
-          rel="noopener"
-        />
-      )) : null}
-    </div>
+    <SocialContainer>
+      {data?.social?.map((social) => (
+        <IconWrapper key={social.network} title={getNetworkName(social.network)}>
+          <SocialIcon
+            url={social.href}
+            network={social.network}
+            bgColor={theme.socialIconBgColor}
+            target="_blank"
+            rel="noopener"
+            fgColor={theme.background === '#0f172a' ? '#0f172a' : '#fff'}
+            style={{ width: 40, height: 40 }}
+          />
+        </IconWrapper>
+      ))}
+    </SocialContainer>
   );
 }
 

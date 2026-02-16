@@ -16,17 +16,14 @@ const styles = {
     paddingLeft: 20,
   },
   subtitleContainerStyle: {
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: 8,
+    marginBottom: 8,
   },
   subtitleStyle: {
     display: 'inline-block',
   },
   inlineChild: {
     display: 'inline-block',
-  },
-  itemStyle: {
-    marginBottom: 10,
   },
 };
 
@@ -47,60 +44,66 @@ function Experience(props) {
   return (
     <>
       <Header title={header} />
-
-      {data
-        ? (
-          <div className="section-content-container">
-            <Container>
-              <Timeline
-                lineColor={theme.timelineLineColor}
-              >
-                {data.map((item) => (
-                  <Fade>
-                    <TimelineItem
-                      key={item.title + item.dateText}
-                      dateText={item.dateText}
-                      dateInnerStyle={{ background: theme.accentColor }}
-                      style={styles.itemStyle}
-                      bodyContainerStyle={{ color: theme.color }}
+      {data ? (
+        <div className="section-content-container">
+          <Container>
+            <Timeline lineColor={theme.timelineLineColor}>
+              {data.map((item) => (
+                <Fade key={item.title + item.dateText}>
+                  <TimelineItem
+                    dateText={item.dateText}
+                    dateInnerStyle={{
+                      background: theme.textPrimary,
+                      color: theme.background === '#0f172a' ? '#0f172a' : '#fff',
+                    }}
+                    bodyContainerStyle={{ color: theme.color }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: '1.2rem',
+                        fontWeight: 600,
+                        color: theme.textPrimary,
+                        marginBottom: 4,
+                      }}
                     >
-                      <h2 className="item-title">
-                        {item.title}
-                      </h2>
-                      <div style={styles.subtitleContainerStyle}>
-                        <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
-                          {item.subtitle}
-                        </h4>
-                        {item.workType && (
-                        <h5 style={styles.inlineChild}>
-                    &nbsp;·
-                          {' '}
+                      {item.title}
+                    </h2>
+                    <div style={styles.subtitleContainerStyle}>
+                      <h4
+                        style={{
+                          ...styles.subtitleStyle,
+                          color: theme.textSecondary,
+                          fontSize: '1rem',
+                          fontWeight: 500,
+                        }}
+                      >
+                        {item.subtitle}
+                      </h4>
+                      {item.workType && (
+                        <h5 style={{ ...styles.inlineChild, color: theme.textMuted, fontSize: '0.9rem' }}>
+                          {' · '}
                           {item.workType}
                         </h5>
-                        )}
-                      </div>
-                      <ul style={styles.ulStyle}>
-                        {item.workDescription.map((point) => (
-                          <div key={point}>
-                            <li>
-                              <ReactMarkdown
-                                children={point}
-                                components={{
-                                  p: 'span',
-                                }}
-                              />
-                            </li>
-                            <br />
-                          </div>
-                        ))}
-                      </ul>
-                    </TimelineItem>
-                  </Fade>
-                ))}
-              </Timeline>
-            </Container>
-          </div>
-        ) : <FallbackSpinner /> }
+                      )}
+                    </div>
+                    <ul style={{ ...styles.ulStyle, color: theme.textSecondary }}>
+                      {(item.workDescription || []).map((point) => (
+                        <li key={point}>
+                          <ReactMarkdown components={{ p: 'span' }}>
+                            {point || ''}
+                          </ReactMarkdown>
+                        </li>
+                      ))}
+                    </ul>
+                  </TimelineItem>
+                </Fade>
+              ))}
+            </Timeline>
+          </Container>
+        </div>
+      ) : (
+        <FallbackSpinner />
+      )}
     </>
   );
 }
