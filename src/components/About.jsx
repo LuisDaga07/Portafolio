@@ -9,25 +9,25 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
 const SectionWrapper = styled.div`
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
 `;
 
 const IntroText = styled.div`
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
   color: ${(props) => props.theme.textSecondary};
   white-space: pre-wrap;
   text-align: left;
-  
+
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 `;
 
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2rem 0;
 `;
 

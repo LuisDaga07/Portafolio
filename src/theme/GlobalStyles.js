@@ -16,7 +16,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.6;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
   }
@@ -26,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   ::-webkit-scrollbar-track {
-    background: ${({ theme }) => (theme.background === '#fafbfc' ? '#f1f5f9' : '#1e293b')};
+    background: ${({ theme }) => (theme.background === '#f8f7f4' ? '#e5e5e0' : '#1a1a1a')};
   }
   
   ::-webkit-scrollbar-thumb {
@@ -78,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
   .card {
     transition: all 0.2s ease;
     border: 1px solid ${({ theme }) => theme.borderColor};
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
   }
   

@@ -7,76 +7,128 @@ import endpoints from '../constants/endpoints';
 import ThemeToggler from './ThemeToggler';
 
 const StyledNavbar = styled(Navbar)`
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background: ${(props) => props.theme.navbarTheme.bgColor};
-  border-bottom: 1px solid ${(props) => props.theme.navbarTheme.borderColor};
+  background: ${(props) => props.theme.navbarTheme.bgColor} !important;
+  border: none;
+  padding: 0.75rem 0;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  
-  &.scrolled {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15),
-      0 2px 4px -2px rgba(0, 0, 0, 0.1),
-      0 0 0 1px ${(props) => props.theme.navbarTheme.borderColor};
+
+  .navbar > .container {
+    position: relative;
+  }
+
+  .navbar-nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .navbar-nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-nav-center {
+      position: static;
+      transform: none;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem 0;
+    }
+
+    .navbar-nav-right {
+      margin-left: 0;
+    }
   }
 `;
 
 const NavLinkStyled = styled(NavLink)`
   color: ${(props) => props.theme.navbarTheme.linkColor} !important;
   font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  padding: 0.5rem 0.9rem !important;
-  margin: 0 0.1rem;
-  border-radius: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.15rem;
+  border-radius: 100px;
   transition: all 0.25s ease;
   text-decoration: none !important;
-  
+
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor} !important;
     background: ${(props) => props.theme.navbarTheme.linkHoverBg} !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
   &.navbar__link--active {
     color: ${(props) => props.theme.navbarTheme.linkActiveColor} !important;
     background: ${(props) => props.theme.navbarTheme.linkActiveBg} !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12),
-      inset 0 1px 0 rgba(255, 255, 255, 0.04);
   }
 `;
 
 const ExternalLink = styled.a`
   color: ${(props) => props.theme.navbarTheme.linkColor} !important;
   font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  padding: 0.5rem 0.9rem !important;
-  margin: 0 0.1rem;
-  border-radius: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.15rem;
+  border-radius: 100px;
   transition: all 0.25s ease;
   text-decoration: none;
 
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor} !important;
     background: ${(props) => props.theme.navbarTheme.linkHoverBg} !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+`;
+
+const CTAButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.25rem;
+  background: #ffffff;
+  color: #1a1a1a !important;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
+    color: #1a1a1a !important;
   }
 `;
 
 const LogoImage = styled.img`
   transition: opacity 0.2s ease;
-  
+
   &:hover {
-    opacity: 0.85;
+    opacity: 0.9;
   }
+`;
+
+const BrandText = styled.span`
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: 0.75rem;
 `;
 
 const NavBar = () => {
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     fetch(endpoints.navbar, {
@@ -87,47 +139,39 @@ const NavBar = () => {
       .catch((err) => err);
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.pageYOffset > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navbarVariant = theme.background === '#0f172a' ? 'dark' : 'light';
+  const navbarVariant = 'dark';
 
   return (
     <StyledNavbar
       fixed="top"
       expand="md"
       variant={navbarVariant}
-      className={isScrolled ? 'scrolled' : ''}
       expanded={expanded}
     >
       <Container>
         {data?.logo && (
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="d-flex align-items-center">
             <LogoImage
               src={data?.logo?.source}
-              className="d-inline-block align-top"
               alt="Logo"
               style={data?.logo?.height && data?.logo?.width
                 ? { height: data.logo.height, width: data.logo.width }
-                : { width: 48, height: 40 }}
+                : { width: 40, height: 40 }}
             />
+            <BrandText>Luis García</BrandText>
           </Navbar.Brand>
         )}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(!expanded)}
           style={{
-            border: `1px solid ${theme.borderColor}`,
+            border: '1px solid rgba(255,255,255,0.3)',
             padding: '0.35rem 0.5rem',
-            borderRadius: '6px',
+            borderRadius: '100px',
           }}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" />
-          <Nav className="align-items-center gap-1">
+          <Nav className="navbar-nav navbar-nav-center">
             {data?.sections?.map((section, index) => (section?.type === 'link' ? (
               <ExternalLink
                 key={section.title}
@@ -151,6 +195,14 @@ const NavBar = () => {
                 {section.title}
               </NavLinkStyled>
             )))}
+          </Nav>
+          <Nav className="navbar-nav navbar-nav-right">
+            <CTAButton
+              href="mailto:luisgarciah2010@hotmail.com"
+              onClick={() => setExpanded(false)}
+            >
+              Contáctame
+            </CTAButton>
             <ThemeToggler onClick={() => setExpanded(false)} />
           </Nav>
         </Navbar.Collapse>

@@ -54,7 +54,7 @@ function Experience(props) {
                     dateText={item.dateText}
                     dateInnerStyle={{
                       background: theme.textPrimary,
-                      color: theme.background === '#0f172a' ? '#0f172a' : '#fff',
+                      color: theme.background === '#0d0d0d' ? '#0d0d0d' : '#1a1a1a',
                     }}
                     bodyContainerStyle={{ color: theme.color }}
                   >

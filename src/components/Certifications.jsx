@@ -27,7 +27,7 @@ const ShowMoreButton = styled.button`
   
   &:hover {
     background: ${(props) => props.theme.textPrimary};
-    color: ${(props) => (props.theme.background === '#0f172a' ? '#0f172a' : '#fff')};
+    color: ${(props) => (props.theme.background === '#0d0d0d' ? '#0d0d0d' : '#1a1a1a')};
   }
 `;
 

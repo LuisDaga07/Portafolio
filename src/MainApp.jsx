@@ -2,6 +2,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
 import NavBarWithRouter from './components/NavBar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
 
@@ -40,6 +41,7 @@ function MainApp() {
           </Suspense>
         </Switch>
       </main>
+      <Footer />
     </div>
   );
 }

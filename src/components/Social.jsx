@@ -55,7 +55,7 @@ function Social() {
             bgColor={theme.socialIconBgColor}
             target="_blank"
             rel="noopener"
-            fgColor={theme.background === '#0f172a' ? '#0f172a' : '#fff'}
+            fgColor={theme.background === '#0d0d0d' ? '#0d0d0d' : '#1a1a1a'}
             style={{ width: 40, height: 40 }}
           />
         </IconWrapper>

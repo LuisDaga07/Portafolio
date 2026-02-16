@@ -4,19 +4,20 @@ import styled, { ThemeContext } from 'styled-components';
 
 const HeaderContainer = styled.div`
   text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
 `;
 
 const HeaderTitle = styled.h1`
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 600;
   color: ${(props) => props.theme.textPrimary};
-  margin: 0 0 0.75rem 0;
-  letter-spacing: -0.025em;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
   line-height: 1.3;
 `;
 
@@ -25,15 +26,15 @@ const HeaderSubtitle = styled.p`
   color: ${({ theme }) => theme.textSecondary};
   margin: 0;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.65;
 `;
 
 const HeaderDivider = styled.div`
   width: 48px;
   height: 2px;
   background: ${(props) => props.theme.textSecondary};
-  margin: 1.5rem auto 0;
-  border-radius: 1px;
+  margin: 1.25rem auto 0;
+  border-radius: 100px;
   opacity: 0.5;
 `;
 
